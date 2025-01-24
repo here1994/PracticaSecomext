@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px; 
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+mat-toolbar span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: none; 
+  transition: background-color 0.3s ease; 
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+  }
+}
+
+router-outlet {
+  flex: 1; 
+  display: block;
+  padding: 20px;
+  background: #f9f9f9; 
+  overflow-y: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  mat-toolbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  button {
+    margin: 5px 0; 
+  }
+}

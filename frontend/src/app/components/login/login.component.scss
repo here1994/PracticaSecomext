@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #1976d2, #4caf50); /* Gradiente atractivo */
+  font-family: 'Roboto', Arial, sans-serif; /* Fuente moderna */
+}
+
+mat-card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  background: white; /* Fondo blanco limpio */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none; /* Evitar texto en mayúsculas automáticas */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.error-message {
+  color: #d32f2f; /* Rojo para el mensaje de error */
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+mat-error {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  mat-card {
+    width: 90%; /* Ajuste responsivo para dispositivos pequeños */
+  }
+}

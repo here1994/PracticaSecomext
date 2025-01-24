@@ -1,0 +1,13 @@
+com\jmf\secomext\pruebapractica\service\ProductoService.class
+GlobalExceptionHandler.class
+com\jmf\secomext\pruebapractica\PruebapracticaApplication.class
+com\jmf\secomext\pruebapractica\controller\CategoriaController.class
+com\jmf\secomext\pruebapractica\controller\ProductoController.class
+com\jmf\secomext\pruebapractica\controller\PingController.class
+com\jmf\secomext\pruebapractica\service\CategoriaService.class
+com\jmf\secomext\pruebapractica\controller\LoginController.class
+com\jmf\secomext\pruebapractica\repository\ProductoRepository.class
+com\jmf\secomext\pruebapractica\entity\Categoria.class
+com\jmf\secomext\pruebapractica\repository\CategoriaRepository.class
+com\jmf\secomext\pruebapractica\security\SecurityConfig.class
+com\jmf\secomext\pruebapractica\entity\Producto.class
