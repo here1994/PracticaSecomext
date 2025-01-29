@@ -1,13 +1,11 @@
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\controller\CategoriaController.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\controller\LoginController.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\controller\PingController.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\controller\ProductoController.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\entity\Categoria.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\entity\Producto.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\exceptions\GlobalExceptionHandler.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\PruebapracticaApplication.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\repository\CategoriaRepository.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\repository\ProductoRepository.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\security\SecurityConfig.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\service\CategoriaService.java
-D:\SECOMEXT\codigofuente\pruebapractica\src\main\java\com\jmf\secomext\pruebapractica\service\ProductoService.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\config\SecurityConfig.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\controller\CategoryController.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\controller\LoginController.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\controller\ProductController.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\model\Category.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\model\Product.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\repository\CategoryRepository.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\repository\ProductRepository.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\SecomextApplication.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\service\CategoryService.java
+C:\Users\here_\Downloads\Nueva carpeta (3)\SECOMEXT-backend2\src\main\java\com\secomext\service\ProductService.java

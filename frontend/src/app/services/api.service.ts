@@ -7,18 +7,19 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'http://localhost:8080/pruebapractica/api'; // URL del backend
+  private baseUrl = 'http://localhost:8080/api'; // URL del backend
 
   constructor(private http: HttpClient) {}
   //Login
   // Método para realizar login con Basic Auth
   login(username: string, password: string): Observable<any> {
-    const authHeader = 'Basic ' + btoa(`${username}:${password}`); // Codifica usuario y contraseña en Base64
+    const authHeader = 'Basic ' + btoa(`${username}:${password}`);// Codifica usuario y contraseña en Base64
+    console.log("Header de autenticación: ", authHeader); // Debug 
     const headers = new HttpHeaders({
       Authorization: authHeader
     });
 
-    return this.http.get(`${this.baseUrl}/login`, {
+    return this.http.get(`${this.baseUrl}`, {
       headers,
       withCredentials: true // Para incluir cookies/sesión si el backend las utiliza
     });
@@ -62,5 +63,7 @@ export class ApiService {
     return this.http.get<any[]>(`${this.baseUrl}/categorias`,{
       withCredentials: true // La cookie JSESSIONID se enviará automáticamente
     });
-  }
+  } 
+  
+    
 }

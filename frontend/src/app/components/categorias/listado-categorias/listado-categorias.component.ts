@@ -26,4 +26,8 @@ export class ListadoCategoriasComponent implements OnInit {
       error: (error) => console.error('Error al cargar categorías', error)
     });
   }
+
+  
+
+  
 }

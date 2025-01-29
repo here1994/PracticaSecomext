@@ -31,10 +31,11 @@ export class FormularioProductosComponent implements OnInit {
 
   ngOnInit(): void {
     this.productoForm = this.fb.group({
-      nombre: ['', Validators.required],
-      precio: ['', [Validators.required, Validators.min(1)]],
-      categoria: ['', Validators.required]
+      NAME: ['', Validators.required], // Cambiado a NAME
+      PRICE: ['', [Validators.required, Validators.min(1)]], // Cambiado a PRICE
+      CATEGORY_ID: ['', Validators.required] // Cambiado a CATEGORY_ID
     });
+    
 
     this.cargarCategorias();
   }
@@ -48,31 +49,21 @@ export class FormularioProductosComponent implements OnInit {
 
   guardarProducto(): void {
     if (this.productoForm.valid) {
-      const productoFormValue = this.productoForm.value;
-  
-      // Estructurar el objeto correctamente para el backend
-      const producto = {
-        nombre: productoFormValue.nombre,
-        precio: productoFormValue.precio,
-        categoria: {
-          id: productoFormValue.categoria // Solo enviar el ID de la categoría
-        }
-      };
+      const producto = this.productoForm.value; // El formulario ya tiene los nombres correctos
       this.apiService.createProducto(producto).subscribe({
         next: () => {
           alert('Producto guardado exitosamente');
-          this.productoForm.reset(); // Reiniciar el formulario
+          this.productoForm.reset(); // Reinicia el formulario
         },
         error: (error) => {
-          console.error('Detalles del error:', error.message || error); // Registra el error en detalle
-          alert('Ocurrió un error al guardar el producto'+error.message);
-        },
-        complete: () => {
-          console.log('Petición completada');
+          console.error('Error al guardar producto:', error);
+          alert('Ocurrió un error al guardar el producto');
         }
       });
     } else {
       alert('Formulario inválido');
     }
   }
+  
+  
 }

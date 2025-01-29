@@ -1,50 +1,88 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100vh; 
+  height: 100vh;
+  background: linear-gradient(180deg, #f4f6f9, #e2ebf0); /* Fondo suave y limpio */
 }
 
 mat-toolbar {
   display: flex;
-  justify-content: space-between; 
   align-items: center;
-  padding: 0 20px; 
+  padding: 0 20px;
   font-size: 18px;
   font-weight: bold;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Fondo púrpura degradado */
+  color: #ffffff;
+
+  .menu-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px; /* Separación entre título y botones */
+  }
+
+  .menu-buttons {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones al extremo derecho */
+    flex-grow: 1; /* Usa todo el espacio disponible */
+    gap: 1rem; /* Reduzco el espacio entre botones */
+
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: none;
+      color: #ffffff;
+      background: transparent;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido al pasar el cursor */
+        transform: scale(1.05); /* Efecto de agrandamiento ligero */
+      }
+
+      &:active {
+        transform: scale(1); /* Sin agrandamiento al hacer clic */
+      }
+    }
+  }
 }
 
-mat-toolbar span {
-  font-size: 20px;
-  font-weight: bold;
-}
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center;
+  height: 150px; /* Ajusté la altura para que ocupe menos espacio */
+  background: linear-gradient(135deg, #6a11cb, #d53369); /* Degradado moderno */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 20px 10px; /* Espaciado */
+  text-align: center;
+  color: #ffffff;
 
-button {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: none; 
-  transition: background-color 0.3s ease; 
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacarlo */
+  }
 
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.9); /* Blanco con transparencia */
   }
 }
 
 router-outlet {
-  flex: 1; 
+  flex: 1;
   display: block;
   padding: 20px;
-  background: #f9f9f9; 
-  overflow-y: auto; 
-}
-
-@media screen and (max-width: 768px) {
-  mat-toolbar {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  button {
-    margin: 5px 0; 
-  }
+  background: #ffffff;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+  overflow-y: auto;
 }
